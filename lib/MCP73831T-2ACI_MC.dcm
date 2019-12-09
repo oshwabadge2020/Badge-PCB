@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP73831T-2ACI_MC
+D MICROCHIP - MCP73831T-2ACI/MC - BATTERY CHARGER, LI-ION/POL, 0.5A, DFN-8
+K
+F https://componentsearchengine.com/Datasheets/1/MCP73831T-2ACI_MC.pdf
+$ENDCMP
+#
+#End Doc Library

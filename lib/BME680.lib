@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# BME680
+#
+DEF BME680 U 0 40 Y Y 1 L N
+F0 "U" -400 520 50 H V L BNN
+F1 "BME680" -401 -611 50 H V L BNN
+F2 "PSON80P300X300X100-8N" 0 0 50 H I L BNN
+F3 "Bosch Sensortec" 0 0 50 H I L BNN
+F4 "LGA-8 Bosch Tools" 0 0 50 H I L BNN
+F5 "Integrated Environmental Unit" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "BME680" 0 0 50 H I L BNN
+F8 "Unavailable" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -400 -500 -400 500 N
+P 2 0 0 10 -400 500 400 500 N
+P 2 0 0 10 400 500 400 -500 N
+P 2 0 0 10 400 -500 -400 -500 N
+X CSB 2 -600 100 200 R 40 40 0 0 I 
+X SDI 3 -600 -100 200 R 40 40 0 0 B 
+X SCK 4 -600 0 200 R 40 40 0 0 I C
+X SDO 5 -600 -200 200 R 40 40 0 0 B 
+X VDDIO 6 600 400 200 L 40 40 0 0 W 
+X GND 1 600 -400 200 L 40 40 0 0 W 
+X GND 7 600 -400 200 L 40 40 0 0 W 
+X VDD 8 600 300 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
