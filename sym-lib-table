@@ -6,4 +6,5 @@
   (lib (name LSM9DS1)(type Legacy)(uri ${KIPRJMOD}/lib/LSM9DS1.lib)(options "")(descr ""))
   (lib (name S-1000C32-I4T1U)(type Legacy)(uri ${KIPRJMOD}/lib/S-1000C32-I4T1U.lib)(options "")(descr ""))
   (lib (name disp_LCD_ST7789_1.3N)(type Legacy)(uri ${KIPRJMOD}/lib/disp_LCD_ST7789_1.3N.lib)(options "")(descr ""))
+  (lib (name SPH0645LM4H)(type Legacy)(uri ${KIPRJMOD}/lib/SPH0645LM4H.lib)(options "")(descr ""))
 )
