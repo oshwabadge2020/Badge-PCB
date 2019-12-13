@@ -2475,4 +2475,64 @@ Text Notes 10350 3800 0    50   ~ 0
 Gesture Sensor, For some minority\nreport style swiping\n\nAlso, a ambient light sensor.\nAlso, color and proximity.
 Text Notes 8950 1200 0    50   ~ 0
 Tricorder on a chip\nTemp, Pressure, Humidity, VOC.
+Text GLabel 6050 6600 0    50   Input ~ 0
+IIC_SCL
+Text GLabel 6050 6700 0    50   Input ~ 0
+IIC_SDA
+$Comp
+L Device:R_US R?
+U 1 1 5DFB54C7
+P 6150 6300
+F 0 "R?" V 6100 6150 50  0000 C CNN
+F 1 "10k" V 6100 6500 50  0000 C CNN
+F 2 "" V 6190 6290 50  0001 C CNN
+F 3 "~" H 6150 6300 50  0001 C CNN
+	1    6150 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DFB5E5D
+P 6300 6300
+F 0 "R?" V 6250 6150 50  0000 C CNN
+F 1 "10k" V 6250 6500 50  0000 C CNN
+F 2 "" V 6340 6290 50  0001 C CNN
+F 3 "~" H 6300 6300 50  0001 C CNN
+	1    6300 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V0 #PWR?
+U 1 1 5DFB69B4
+P 6150 6050
+F 0 "#PWR?" H 6150 5900 50  0001 C CNN
+F 1 "+3V0" H 6165 6223 50  0000 C CNN
+F 2 "" H 6150 6050 50  0001 C CNN
+F 3 "" H 6150 6050 50  0001 C CNN
+	1    6150 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR?
+U 1 1 5DFB7745
+P 6300 6050
+F 0 "#PWR?" H 6300 5900 50  0001 C CNN
+F 1 "+3V0" H 6315 6223 50  0000 C CNN
+F 2 "" H 6300 6050 50  0001 C CNN
+F 3 "" H 6300 6050 50  0001 C CNN
+	1    6300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6050 6150 6150
+Wire Wire Line
+	6300 6050 6300 6150
+Wire Wire Line
+	6050 6600 6150 6600
+Wire Wire Line
+	6150 6600 6150 6450
+Wire Wire Line
+	6050 6700 6300 6700
+Wire Wire Line
+	6300 6700 6300 6450
 $EndSCHEMATC
