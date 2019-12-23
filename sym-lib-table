@@ -9,4 +9,5 @@
   (lib (name SPH0645LM4H)(type Legacy)(uri ${KIPRJMOD}/lib/SPH0645LM4H.lib)(options "")(descr ""))
   (lib (name TFT_1.54IN_240X240PIN)(type Legacy)(uri C:/Users/michael/Documents/GitHub/Badge-PCB/lib/TFT_1.54IN_240X240PIN.lib)(options "")(descr ""))
   (lib (name badge-rescue)(type Legacy)(uri ${KIPRJMOD}/badge-rescue.lib)(options "")(descr ""))
+  (lib (name SM02B-SRSS-TB_LF__SN_)(type Legacy)(uri ${KIPRJMOD}/lib/SM02B-SRSS-TB_LF__SN_.lib)(options "")(descr ""))
 )
