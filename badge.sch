@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:badge-cache
+EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -1881,69 +1882,10 @@ F 3 "" H 7350 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 6050 7350 6150
-$Comp
-L Switch:SW_DIP_x01 SW3
-U 1 1 5ED93619
-P 7800 5750
-F 0 "SW3" V 7600 5550 50  0000 L CNN
-F 1 "SW_DIP_x01" V 7845 5880 50  0001 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 7800 5750 50  0001 C CNN
-F 3 "~" H 7800 5750 50  0001 C CNN
-	1    7800 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R14
-U 1 1 5ED9361F
-P 7800 5200
-F 0 "R14" V 7750 5050 50  0000 C CNN
-F 1 "100k" V 7750 5400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7840 5190 50  0001 C CNN
-F 3 "~" H 7800 5200 50  0001 C CNN
-	1    7800 5200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7800 5450 7800 5400
-Wire Wire Line
-	7650 5400 7650 5300
-Wire Wire Line
-	7650 5400 7800 5400
-Connection ~ 7800 5400
-Wire Wire Line
-	7800 5400 7800 5350
-$Comp
-L power:+3V0 #PWR0160
-U 1 1 5ED9362A
-P 7800 4950
-F 0 "#PWR0160" H 7800 4800 50  0001 C CNN
-F 1 "+3V0" H 7815 5123 50  0000 C CNN
-F 2 "" H 7800 4950 50  0001 C CNN
-F 3 "" H 7800 4950 50  0001 C CNN
-	1    7800 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 4950 7800 5050
-$Comp
-L power:GND #PWR0161
-U 1 1 5ED93631
-P 7800 6150
-F 0 "#PWR0161" H 7800 5900 50  0001 C CNN
-F 1 "GND" H 7805 5977 50  0000 C CNN
-F 2 "" H 7800 6150 50  0001 C CNN
-F 3 "" H 7800 6150 50  0001 C CNN
-	1    7800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 6050 7800 6150
 Text GLabel 6750 5300 1    50   Input ~ 0
 SW_A
 Text GLabel 7200 5300 1    50   Input ~ 0
 SW_B
-Text GLabel 7650 5300 1    50   Input ~ 0
-SW_C
 Text GLabel 5350 6900 2    50   Input ~ 0
 SW_A
 Text GLabel 5350 7000 2    50   Input ~ 0
