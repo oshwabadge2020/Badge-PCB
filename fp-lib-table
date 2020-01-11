@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name lib)(type KiCad)(uri "$(KIPRJMOD)/lib")(options "")(descr ""))
+  (lib (name Badge-PCB)(type KiCad)(uri ${KIPRJMOD}/Badge-PCB.pretty)(options "")(descr ""))
 )
