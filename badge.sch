@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:badge-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BMD-340-A-R:BMD-340-A-R U3
+L badge-PCB:BMD-340-A-R_BMD-340-A-R U3
 U 1 1 5DEFBCA6
 P 4650 6400
 F 0 "U3" H 4700 8267 50  0000 C CNN
@@ -42,7 +41,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 4600 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L S-1000C32-I4T1U:S-1000C32-I4T1U IC2
+L badge-PCB:S-1000C32-I4T1U_S-1000C32-I4T1U IC2
 U 1 1 5DF14507
 P 4100 2250
 F 0 "IC2" H 4250 2500 50  0000 C CNN
@@ -117,7 +116,7 @@ F 3 "" H 2450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP73831T-2ACI_MC:MCP73831T-2ACI_MC IC1
+L badge-PCB:MCP73831T-2ACI_MC_MCP73831T-2ACI_MC IC1
 U 1 1 5DF29AE2
 P 4000 2900
 F 0 "IC1" H 4600 3165 50  0000 C CNN
@@ -280,7 +279,7 @@ F 3 "~" H 5500 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V0 #PWR0111
+L badge-rescue:+3V0-power #PWR0111
 U 1 1 5DF48E3F
 P 5750 3400
 F 0 "#PWR0111" H 5750 3250 50  0001 C CNN
@@ -365,7 +364,7 @@ $EndComp
 Wire Wire Line
 	3650 1750 3650 1850
 $Comp
-L power:+3V0 #PWR0115
+L badge-rescue:+3V0-power #PWR0115
 U 1 1 5DF6D59D
 P 5400 1200
 F 0 "#PWR0115" H 5400 1050 50  0001 C CNN
@@ -499,7 +498,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 5400 3750 5400
 $Comp
-L power:+3V0 #PWR0121
+L badge-rescue:+3V0-power #PWR0121
 U 1 1 5E044E39
 P 5500 4650
 F 0 "#PWR0121" H 5500 4500 50  0001 C CNN
@@ -585,7 +584,7 @@ $EndComp
 Wire Wire Line
 	4600 1750 4600 1800
 $Comp
-L Transistor_FET:DMG3414U Q1
+L badge-rescue:DMG3414U-Transistor_FET Q1
 U 1 1 5E0ADB5D
 P 2350 3800
 F 0 "Q1" H 2554 3846 50  0000 L CNN
@@ -754,7 +753,7 @@ LCD_CS
 Text GLabel 4050 7100 0    50   Input ~ 0
 LCD_RST
 $Comp
-L power:+3V0 #PWR0129
+L badge-rescue:+3V0-power #PWR0129
 U 1 1 5E146EAD
 P 13750 5150
 F 0 "#PWR0129" H 13750 5000 50  0001 C CNN
@@ -765,7 +764,7 @@ F 3 "" H 13750 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:DMG3414U Q2
+L badge-rescue:DMG3414U-Transistor_FET Q2
 U 1 1 5E14E2D9
 P 12950 5800
 F 0 "Q2" V 13199 5800 50  0000 C CNN
@@ -847,7 +846,7 @@ F 3 "" H 13800 8100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V0 #PWR0132
+L badge-rescue:+3V0-power #PWR0132
 U 1 1 5E1DDFAA
 P 13800 6200
 F 0 "#PWR0132" H 13800 6050 50  0001 C CNN
@@ -909,7 +908,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 6950 1600 6950
 $Comp
-L power:+3V0 #PWR0133
+L badge-rescue:+3V0-power #PWR0133
 U 1 1 5E29AB96
 P 2200 6400
 F 0 "#PWR0133" H 2200 6250 50  0001 C CNN
@@ -966,7 +965,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 5900 4000 5900
 $Comp
-L APDS-9960:APDS-9960 U7
+L badge-PCB:APDS-9960_APDS-9960 U7
 U 1 1 5E37855C
 P 9700 3050
 F 0 "U7" H 9700 3515 50  0000 C CNN
@@ -977,7 +976,7 @@ F 3 "" H 9700 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR0134
+L badge-rescue:+3V0-power #PWR0134
 U 1 1 5E38B748
 P 8250 2500
 F 0 "#PWR0134" H 8250 2350 50  0001 C CNN
@@ -1076,7 +1075,7 @@ F 3 "~" H 8200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR0136
+L badge-rescue:+3V0-power #PWR0136
 U 1 1 5E3DA827
 P 8200 3200
 F 0 "#PWR0136" H 8200 3050 50  0001 C CNN
@@ -1161,7 +1160,7 @@ Wire Wire Line
 Wire Wire Line
 	10500 3250 10200 3250
 $Comp
-L LSM9DS1:LSM9DS1 U5
+L badge-PCB:LSM9DS1_LSM9DS1 U5
 U 1 1 5E460ADA
 P 9700 5400
 F 0 "U5" H 9700 6367 50  0000 C CNN
@@ -1177,7 +1176,7 @@ F 8 "Unavailable" H 9700 5400 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR0140
+L badge-rescue:+3V0-power #PWR0140
 U 1 1 5E46369A
 P 10900 4600
 F 0 "#PWR0140" H 10900 4450 50  0001 C CNN
@@ -1312,7 +1311,7 @@ Wire Wire Line
 Text GLabel 10700 5200 2    50   Input ~ 0
 ACC_INT
 $Comp
-L power:+3V0 #PWR0145
+L badge-rescue:+3V0-power #PWR0145
 U 1 1 5E4ECA7A
 P 8000 4650
 F 0 "#PWR0145" H 8000 4500 50  0001 C CNN
@@ -1422,7 +1421,7 @@ Connection ~ 10750 6100
 Wire Wire Line
 	10750 6100 10750 6200
 $Comp
-L BME680:BME680 U6
+L badge-PCB:BME680_BME680 U6
 U 1 1 5E643F26
 P 9400 1750
 F 0 "U6" H 9400 2417 50  0000 C CNN
@@ -1438,7 +1437,7 @@ F 8 "Unavailable" H 9400 1750 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR0147
+L badge-rescue:+3V0-power #PWR0147
 U 1 1 5E64AE2E
 P 10150 1250
 F 0 "#PWR0147" H 10150 1100 50  0001 C CNN
@@ -1541,7 +1540,6 @@ Text Notes 5650 2850 0    50   ~ 0
 10k = 100mA Charge\n
 Wire Wire Line
 	3100 2900 4000 2900
-Connection ~ 4000 2900
 Wire Notes Line
 	6500 4250 900  4250
 Wire Notes Line
@@ -1583,7 +1581,7 @@ Wire Notes Line
 Text Notes 6850 1100 0    157  ~ 0
 Sensors
 $Comp
-L Connector:TestPoint TP1
+L badge-rescue:TestPoint-Connector TP1
 U 1 1 5EB8EB53
 P 1950 9250
 F 0 "TP1" V 1904 9438 50  0000 L CNN
@@ -1602,7 +1600,7 @@ D+
 Text GLabel 1850 9700 0    50   Input ~ 0
 D-
 $Comp
-L Connector:TestPoint TP2
+L badge-rescue:TestPoint-Connector TP2
 U 1 1 5EBAD9AC
 P 1950 9400
 F 0 "TP2" V 1904 9588 50  0000 L CNN
@@ -1613,7 +1611,7 @@ F 3 "~" H 2150 9400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L badge-rescue:TestPoint-Connector TP3
 U 1 1 5EBADC80
 P 1950 9550
 F 0 "TP3" V 1904 9738 50  0000 L CNN
@@ -1624,7 +1622,7 @@ F 3 "~" H 2150 9550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L badge-rescue:TestPoint-Connector TP4
 U 1 1 5EBC0CA5
 P 1950 9700
 F 0 "TP4" V 1904 9888 50  0000 L CNN
@@ -1635,7 +1633,7 @@ F 3 "~" H 2150 9700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V0 #PWR0152
+L badge-rescue:+3V0-power #PWR0152
 U 1 1 5EBC28EE
 P 3000 9350
 F 0 "#PWR0152" H 3000 9200 50  0001 C CNN
@@ -1657,7 +1655,7 @@ F 3 "" H 3250 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP7
+L badge-rescue:TestPoint-Connector TP7
 U 1 1 5EBC59AC
 P 3000 9450
 F 0 "TP7" H 2942 9476 50  0000 R CNN
@@ -1668,7 +1666,7 @@ F 3 "~" H 3200 9450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP8
+L badge-rescue:TestPoint-Connector TP8
 U 1 1 5EBC77B8
 P 3250 9450
 F 0 "TP8" H 3192 9476 50  0000 R CNN
@@ -1683,7 +1681,7 @@ IIC_SCL
 Text GLabel 1850 9850 0    50   Input ~ 0
 IIC_SDA
 $Comp
-L Connector:TestPoint TP5
+L badge-rescue:TestPoint-Connector TP5
 U 1 1 5EBE4091
 P 1950 9850
 F 0 "TP5" V 1904 10038 50  0000 L CNN
@@ -1694,7 +1692,7 @@ F 3 "~" H 2150 9850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP6
+L badge-rescue:TestPoint-Connector TP6
 U 1 1 5EBE4364
 P 1950 10000
 F 0 "TP6" V 1904 10188 50  0000 L CNN
@@ -1721,7 +1719,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 9350 3250 9450
 $Comp
-L Connector:TestPoint TP10
+L badge-rescue:TestPoint-Connector TP10
 U 1 1 5EC890F2
 P 3500 9450
 F 0 "TP10" H 3442 9476 50  0000 R CNN
@@ -1754,7 +1752,7 @@ F 3 "" H 3000 10050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP9
+L badge-rescue:TestPoint-Connector TP9
 U 1 1 5EC938C7
 P 3000 9900
 F 0 "TP9" H 3058 10018 50  0000 L CNN
@@ -1800,7 +1798,7 @@ Connection ~ 6900 5400
 Wire Wire Line
 	6900 5400 6900 5350
 $Comp
-L power:+3V0 #PWR0156
+L badge-rescue:+3V0-power #PWR0156
 U 1 1 5ED54756
 P 6900 4950
 F 0 "#PWR0156" H 6900 4800 50  0001 C CNN
@@ -1857,7 +1855,7 @@ Connection ~ 7350 5400
 Wire Wire Line
 	7350 5400 7350 5350
 $Comp
-L power:+3V0 #PWR0158
+L badge-rescue:+3V0-power #PWR0158
 U 1 1 5ED7E578
 P 7350 4950
 F 0 "#PWR0158" H 7350 4800 50  0001 C CNN
@@ -1913,7 +1911,7 @@ Can't be swapped
 Wire Notes Line
 	3550 6700 3550 6800
 $Comp
-L Connector:TestPoint TP11
+L badge-rescue:TestPoint-Connector TP11
 U 1 1 5EF056EB
 P 1950 9100
 F 0 "TP11" V 1904 9288 50  0000 L CNN
@@ -1952,7 +1950,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 5200 5250 5200
 $Comp
-L SPH0645LM4H:SPH0645LM4H-B MIC1
+L badge-PCB:SPH0645LM4H_SPH0645LM4H-B MIC1
 U 1 1 5F0105E0
 P 10100 7300
 F 0 "MIC1" H 9700 7800 60  0000 L CNN
@@ -1972,7 +1970,7 @@ F 12 "Active" H 10300 8500 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR01
+L badge-rescue:+3V0-power #PWR01
 U 1 1 5F01B004
 P 10100 6800
 F 0 "#PWR01" H 10100 6650 50  0001 C CNN
@@ -2052,7 +2050,7 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:DMG3414U Q3
+L badge-rescue:DMG3414U-Transistor_FET Q3
 U 1 1 5F19C697
 P 8400 9100
 F 0 "Q3" V 8742 9100 50  0000 C CNN
@@ -2221,7 +2219,7 @@ F 3 "~" H 6300 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V0 #PWR07
+L badge-rescue:+3V0-power #PWR07
 U 1 1 5DFB69B4
 P 6150 6050
 F 0 "#PWR07" H 6150 5900 50  0001 C CNN
@@ -2232,7 +2230,7 @@ F 3 "" H 6150 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V0 #PWR08
+L badge-rescue:+3V0-power #PWR08
 U 1 1 5DFB7745
 P 6300 6050
 F 0 "#PWR08" H 6300 5900 50  0001 C CNN
@@ -2255,7 +2253,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 6700 6300 6450
 $Comp
-L Memory_Flash:W25Q32JVSS U1
+L badge-rescue:W25Q32JVSS-Memory_Flash U1
 U 1 1 5E019631
 P 2200 6850
 F 0 "U1" H 2200 7428 50  0000 C CNN
@@ -2392,7 +2390,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 3100 3900 3100
 $Comp
-L SM02B-SRSS-TB_LF__SN_:SM02B-SRSS-TB J2
+L badge-PCB:SM02B-SRSS-TB_LF__SN__SM02B-SRSS-TB J2
 U 1 1 5E03F58A
 P 5650 4050
 F 0 "J2" H 6080 4246 50  0000 L CNN
