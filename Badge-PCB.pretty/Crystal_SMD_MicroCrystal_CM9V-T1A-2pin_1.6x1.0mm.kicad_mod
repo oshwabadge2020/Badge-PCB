@@ -1,4 +1,4 @@
-(module Crystals:Crystal_SMD_MicroCrystal_CM9V-T1A-2pin_1.6x1.0mm (layer F.Cu) (tedit 58CD2E9D)
+(module Crystal_SMD_MicroCrystal_CM9V-T1A-2pin_1.6x1.0mm (layer F.Cu) (tedit 5E1B6219)
   (descr "SMD Crystal MicroCrystal CM9V-T1A series http://www.microcrystal.com/images/_Product-Documentation/01_TF_ceramic_Packages/01_Datasheet/CM9V-T1A.pdf, 1.6x1.0mm^2 package")
   (tags "SMD SMT crystal")
   (attr smd)
@@ -25,7 +25,7 @@
   (fp_line (start 1.2 -0.9) (end -1.2 -0.9) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -0.6 0) (size 0.6 1.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.6 0) (size 0.6 1.2) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Crystals.3dshapes/Crystal_SMD_MicroCrystal_CM9V-T1A-2pin_1.6x1.0mm.wrl
+  (model ${KIPRJMOD}/3d_part_models/xtal_CM9V-T1A.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
