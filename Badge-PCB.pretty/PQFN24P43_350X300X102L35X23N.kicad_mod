@@ -1,4 +1,4 @@
-(module lib:PQFN24P43_350X300X102L35X23N (layer F.Cu) (tedit 5DFFDA77)
+(module PQFN24P43_350X300X102L35X23N (layer F.Cu) (tedit 5E1B0A3D)
   (solder_mask_margin 0.0254)
   (fp_text reference U5 (at 3 0 270) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
@@ -65,4 +65,9 @@
   (pad 16 smd rect (at 1.47 -0.215) (size 0.53 0.28) (layers F.Cu F.Paste))
   (pad 17 smd rect (at 1.47 -0.645) (size 0.53 0.28) (layers F.Cu F.Paste))
   (pad 18 smd rect (at 1.505 -1.225) (size 0.28 0.53) (layers F.Cu F.Paste))
+  (model ${KIPRJMOD}/3d_part_models/LGA-24L_3.5x3_0.43p.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

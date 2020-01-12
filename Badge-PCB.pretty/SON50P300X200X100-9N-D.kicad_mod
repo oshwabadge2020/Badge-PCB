@@ -1,4 +1,4 @@
-(module SON50P300X200X100-9N-D (layer F.Cu) (tedit 5E199B71)
+(module SON50P300X200X100-9N-D (layer F.Cu) (tedit 5E1B11BF)
   (descr MCP73831T-2ACI/MC-1)
   (tags "Integrated Circuit")
   (attr smd)
@@ -30,11 +30,6 @@
   (pad 3 smd rect (at -1.5 0.25 90) (size 0.3 0.8) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -1.5 -0.25 90) (size 0.3 0.8) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -1.5 -0.75 90) (size 0.3 0.8) (layers F.Cu F.Paste F.Mask))
-  (model MCP73831T-2ACI_MC.stp
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
   (model ${KIPRJMOD}/3d_part_models/DFN8_2x3MC-L.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
