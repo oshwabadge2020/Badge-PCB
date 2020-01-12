@@ -1,4 +1,4 @@
-(module digikey-footprints:SPH0645LM4H-B (layer F.Cu) (tedit 5D28A667)
+(module SPH0645LM4H-B (layer F.Cu) (tedit 5E1B18F1)
   (descr http://www.digikey.com/products/en?keywords=423-1405-1-ND)
   (solder_mask_margin 0.0254)
   (attr smd)
@@ -38,4 +38,9 @@
   (pad 3 smd circle (at -0.662 0) (size 0.3 0.3) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd circle (at 0 -0.662) (size 0.3 0.3) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd circle (at 0 0.662) (size 0.3 0.3) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/3d_part_models/SPH0645LM4H_B009.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

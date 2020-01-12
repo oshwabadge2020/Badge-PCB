@@ -1,4 +1,4 @@
-(module lib:RIGADO_BMD-340-A-R (layer F.Cu) (tedit 5DFFD8A7)
+(module RIGADO_BMD-340-A-R (layer F.Cu) (tedit 5E1B0DA2)
   (solder_mask_margin 0.0254)
   (fp_text reference U3 (at -4.594315 -5.909865 180) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
@@ -89,4 +89,9 @@
   (pad 3 smd rect (at -1.75 4.4) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -2.3 3.5) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -2.85 4.4) (size 0.5 0.5) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/3d_part_models/BMD_340_A_R077.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

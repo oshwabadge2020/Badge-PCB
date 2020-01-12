@@ -1,4 +1,4 @@
-(module lib:APDS-9960 (layer F.Cu) (tedit 5E002D0C)
+(module APDS-9960 (layer F.Cu) (tedit 5E1B0984)
   (attr smd)
   (fp_text reference U7 (at 1.9812 -0.0254 -90) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
@@ -33,4 +33,9 @@
   (pad 3 smd rect (at 0.6985 0.4826) (size 0.59944 0.71882) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.6985 -0.4826) (size 0.59944 0.71882) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at 0.6985 -1.45288) (size 0.59944 0.71882) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/3d_part_models/APDS_9962.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
