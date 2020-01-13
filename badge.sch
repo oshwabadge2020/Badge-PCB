@@ -35,7 +35,7 @@ L Regulator_Linear:LP2985-3.3 U2
 U 1 1 5DEFECBC
 P 4600 1450
 F 0 "U2" H 4600 1792 50  0000 C CNN
-F 1 "S-1318" H 4600 1701 50  0000 C CNN
+F 1 "AP2112K-3.3V" H 4600 1701 50  0000 C CNN
 F 2 "Badge-PCB:SOT-23-5" H 4600 1775 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 4600 1450 50  0001 C CNN
 	1    4600 1450
@@ -585,17 +585,6 @@ $EndComp
 Wire Wire Line
 	4600 1750 4600 1800
 $Comp
-L badge-rescue:DMG3414U-Transistor_FET Q1
-U 1 1 5E0ADB5D
-P 2350 3800
-F 0 "Q1" H 2554 3846 50  0000 L CNN
-F 1 "DMG3414U" H 2554 3755 50  0000 L CNN
-F 2 "Badge-PCB:SOT-23" H 2550 3725 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds31739.pdf" H 2350 3800 50  0001 L CNN
-	1    2350 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R1
 U 1 1 5E0D32DF
 P 1600 3750
@@ -756,70 +745,38 @@ LCD_RST
 $Comp
 L badge-rescue:+3V0-power #PWR0129
 U 1 1 5E146EAD
-P 13750 5150
-F 0 "#PWR0129" H 13750 5000 50  0001 C CNN
-F 1 "+3V0" H 13765 5323 50  0000 C CNN
-F 2 "" H 13750 5150 50  0001 C CNN
-F 3 "" H 13750 5150 50  0001 C CNN
-	1    13750 5150
-	1    0    0    -1  
+P 13850 5400
+F 0 "#PWR0129" H 13850 5250 50  0001 C CNN
+F 1 "+3V0" V 13850 5650 50  0000 C CNN
+F 2 "" H 13850 5400 50  0001 C CNN
+F 3 "" H 13850 5400 50  0001 C CNN
+	1    13850 5400
+	0    -1   -1   0   
 $EndComp
-$Comp
-L badge-rescue:DMG3414U-Transistor_FET Q2
-U 1 1 5E14E2D9
-P 12950 5800
-F 0 "Q2" V 13199 5800 50  0000 C CNN
-F 1 "DMG3414U" V 13290 5800 50  0000 C CNN
-F 2 "Badge-PCB:SOT-23" H 13150 5725 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds31739.pdf" H 12950 5800 50  0001 L CNN
-	1    12950 5800
-	-1   0    0    -1  
-$EndComp
-Text GLabel 13850 5900 0    50   Input ~ 0
-LCD_LEDA
-Text GLabel 12850 6550 3    50   Input ~ 0
-LCD_LEDA
 $Comp
 L Device:R_US R6
 U 1 1 5E1652C9
-P 12850 6250
-F 0 "R6" H 12700 6200 50  0000 C CNN
-F 1 "33" H 12700 6300 50  0000 C CNN
-F 2 "Badge-PCB:R_0402" V 12890 6240 50  0001 C CNN
-F 3 "~" H 12850 6250 50  0001 C CNN
-	1    12850 6250
-	1    0    0    -1  
+P 13400 5900
+F 0 "R6" V 13300 5900 50  0000 C CNN
+F 1 "33" V 13500 5900 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 13440 5890 50  0001 C CNN
+F 3 "~" H 13400 5900 50  0001 C CNN
+	1    13400 5900
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R8
 U 1 1 5E16C237
-P 13200 5550
-F 0 "R8" H 13050 5500 50  0000 C CNN
-F 1 "100k" H 13050 5600 50  0000 C CNN
-F 2 "Badge-PCB:R_0402" V 13240 5540 50  0001 C CNN
-F 3 "~" H 13200 5550 50  0001 C CNN
-	1    13200 5550
+P 12500 6100
+F 0 "R8" H 12350 6050 50  0000 C CNN
+F 1 "100k" H 12350 6150 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 12540 6090 50  0001 C CNN
+F 3 "~" H 12500 6100 50  0001 C CNN
+	1    12500 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12850 6100 12850 6000
-Wire Wire Line
-	12850 6550 12850 6400
-Wire Wire Line
-	13200 5700 13200 5800
-Wire Wire Line
-	13200 5800 13150 5800
-Wire Wire Line
-	12850 5600 12850 5300
-Wire Wire Line
-	12850 5300 13200 5300
-Wire Wire Line
-	13200 5400 13200 5300
-Text GLabel 13200 6000 3    50   Input ~ 0
+Text GLabel 12500 6400 3    50   Input ~ 0
 LCD_BL
-Wire Wire Line
-	13200 6000 13200 5800
-Connection ~ 13200 5800
 $Comp
 L power:GND #PWR0130
 U 1 1 5E191E95
@@ -831,8 +788,6 @@ F 3 "" H 13850 6000 50  0001 C CNN
 	1    13850 6000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	13850 5900 14000 5900
 Wire Wire Line
 	14000 6000 13850 6000
 $Comp
@@ -857,15 +812,6 @@ F 3 "" H 13800 6200 50  0001 C CNN
 	1    13800 6200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	14000 5300 13750 5300
-Wire Wire Line
-	13750 5300 13750 5200
-Wire Wire Line
-	14000 5200 13750 5200
-Connection ~ 13750 5200
-Wire Wire Line
-	13750 5200 13750 5150
 Wire Wire Line
 	14000 6200 13800 6200
 Text GLabel 13850 7100 0    50   Input ~ 0
@@ -1511,17 +1457,6 @@ F 3 "~" H 8500 1650 50  0001 C CNN
 	1    8500 1650
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0150
-U 1 1 5E6B4A6E
-P 8250 1650
-F 0 "#PWR0150" H 8250 1400 50  0001 C CNN
-F 1 "GND" V 8255 1522 50  0000 R CNN
-F 2 "" H 8250 1650 50  0001 C CNN
-F 3 "" H 8250 1650 50  0001 C CNN
-	1    8250 1650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8350 1650 8250 1650
 Wire Wire Line
@@ -1532,9 +1467,6 @@ Wire Wire Line
 	8800 1850 8600 1850
 Wire Wire Line
 	10600 5200 10700 5200
-Wire Wire Line
-	13200 5300 13750 5300
-Connection ~ 13750 5300
 Text Notes 5650 2850 0    50   ~ 0
 10k = 100mA Charge\n
 Wire Wire Line
@@ -1594,10 +1526,6 @@ Text GLabel 1850 9400 0    50   Input ~ 0
 SWDIO
 Text GLabel 1850 9250 0    50   Input ~ 0
 SWCLK
-Text GLabel 1850 9550 0    50   Input ~ 0
-D+
-Text GLabel 1850 9700 0    50   Input ~ 0
-D-
 $Comp
 L badge-rescue:TestPoint-Connector TP2
 U 1 1 5EBAD9AC
@@ -1607,28 +1535,6 @@ F 1 "TestPoint" V 1995 9588 50  0001 L CNN
 F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 2150 9400 50  0001 C CNN
 F 3 "~" H 2150 9400 50  0001 C CNN
 	1    1950 9400
-	0    1    1    0   
-$EndComp
-$Comp
-L badge-rescue:TestPoint-Connector TP3
-U 1 1 5EBADC80
-P 1950 9550
-F 0 "TP3" V 1904 9738 50  0000 L CNN
-F 1 "TestPoint" V 1995 9738 50  0001 L CNN
-F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 2150 9550 50  0001 C CNN
-F 3 "~" H 2150 9550 50  0001 C CNN
-	1    1950 9550
-	0    1    1    0   
-$EndComp
-$Comp
-L badge-rescue:TestPoint-Connector TP4
-U 1 1 5EBC0CA5
-P 1950 9700
-F 0 "TP4" V 1904 9888 50  0000 L CNN
-F 1 "TestPoint" V 1995 9888 50  0001 L CNN
-F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 2150 9700 50  0001 C CNN
-F 3 "~" H 2150 9700 50  0001 C CNN
-	1    1950 9700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1705,10 +1611,6 @@ Wire Wire Line
 	1950 9250 1850 9250
 Wire Wire Line
 	1850 9400 1950 9400
-Wire Wire Line
-	1950 9550 1850 9550
-Wire Wire Line
-	1950 9700 1850 9700
 Wire Wire Line
 	1950 9850 1850 9850
 Wire Wire Line
@@ -2041,17 +1943,6 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:DMG3414U-Transistor_FET Q3
-U 1 1 5F19C697
-P 8400 9100
-F 0 "Q3" V 8742 9100 50  0000 C CNN
-F 1 "DMG3414U" V 8651 9100 50  0000 C CNN
-F 2 "Badge-PCB:SOT-23" H 8600 9025 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds31739.pdf" H 8400 9100 50  0001 L CNN
-	1    8400 9100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VBUS #PWR03
 U 1 1 5F1B3234
 P 7950 8800
@@ -2247,8 +2138,8 @@ $Comp
 L badge-rescue:W25Q32JVSS-Memory_Flash U1
 U 1 1 5E019631
 P 2200 6850
-F 0 "U1" H 2200 7428 50  0000 C CNN
-F 1 "W25Q32JVSS" H 2500 7200 50  0000 C CNN
+F 0 "U1" H 1900 7200 50  0000 C CNN
+F 1 "W25Q32JVZPIQ" H 2500 7200 50  0000 C CNN
 F 2 "Badge-PCB:SON127P600X500X80-9N" H 2200 6850 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 2200 6850 50  0001 C CNN
 	1    2200 6850
@@ -2339,17 +2230,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR011
 U 1 1 5E583CC7
-P 13850 5400
-F 0 "#PWR011" H 13850 5150 50  0001 C CNN
-F 1 "GND" V 13855 5272 50  0000 R CNN
-F 2 "" H 13850 5400 50  0001 C CNN
-F 3 "" H 13850 5400 50  0001 C CNN
-	1    13850 5400
+P 13850 5200
+F 0 "#PWR011" H 13850 4950 50  0001 C CNN
+F 1 "GND" V 13855 5072 50  0000 R CNN
+F 2 "" H 13850 5200 50  0001 C CNN
+F 3 "" H 13850 5200 50  0001 C CNN
+	1    13850 5200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13850 5400 14000 5400
-Connection ~ 13200 5300
+	13850 5200 14000 5200
 $Comp
 L power:+BATT #PWR0151
 U 1 1 5E0C52F0
@@ -2385,7 +2275,7 @@ L badge-PCB:SM02B-SRSS-TB_LF__SN__SM02B-SRSS-TB J2
 U 1 1 5E03F58A
 P 5650 4050
 F 0 "J2" H 6080 4246 50  0000 L CNN
-F 1 "SM02B-SRSS-TB" H 6080 4155 50  0000 L CNN
+F 1 "SM02B-SRSS-TB" H 5700 4000 50  0000 L CNN
 F 2 "Badge-PCB:SM02B-SRSS-TB" H 5650 4050 50  0001 L BNN
 F 3 "0.23 USD" H 5650 4050 50  0001 L BNN
 F 4 "JST" H 5650 4050 50  0001 L BNN "Field4"
@@ -2413,4 +2303,128 @@ Wire Wire Line
 	1800 2250 1750 2250
 Wire Wire Line
 	4050 7800 4150 7800
+$Comp
+L Transistor_FET:AO3401A Q1
+U 1 1 5E1E6343
+P 2350 3800
+F 0 "Q1" H 2555 3846 50  0000 L CNN
+F 1 "AO3401A" H 2555 3755 50  0000 L CNN
+F 2 "Badge-PCB:SOT-23" H 2550 3725 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2350 3800 50  0001 L CNN
+	1    2350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q3
+U 1 1 5E1FDFBB
+P 8400 9100
+F 0 "Q3" V 8742 9100 50  0000 C CNN
+F 1 "AO3401A" V 8651 9100 50  0000 C CNN
+F 2 "Badge-PCB:SOT-23" H 8600 9025 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8400 9100 50  0001 L CNN
+	1    8400 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L badge-rescue:+3V0-power #PWR012
+U 1 1 5E1FF0FC
+P 8250 1650
+F 0 "#PWR012" H 8250 1500 50  0001 C CNN
+F 1 "+3V0" H 8265 1823 50  0000 C CNN
+F 2 "" H 8250 1650 50  0001 C CNN
+F 3 "" H 8250 1650 50  0001 C CNN
+	1    8250 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L badge-rescue:+3V0-power #PWR013
+U 1 1 5E2E21FB
+P 13850 5300
+F 0 "#PWR013" H 13850 5150 50  0001 C CNN
+F 1 "+3V0" V 13850 5550 50  0000 C CNN
+F 2 "" H 13850 5300 50  0001 C CNN
+F 3 "" H 13850 5300 50  0001 C CNN
+	1    13850 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13850 5300 14000 5300
+Wire Wire Line
+	13850 5400 14000 5400
+$Comp
+L Transistor_FET:AO3401A Q2
+U 1 1 5E30F506
+P 12950 6000
+F 0 "Q2" V 13292 6000 50  0000 C CNN
+F 1 "AO3401A" V 13201 6000 50  0000 C CNN
+F 2 "Badge-PCB:SOT-23" H 13150 5925 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 12950 6000 50  0001 L CNN
+	1    12950 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L badge-rescue:+3V0-power #PWR014
+U 1 1 5E3262A3
+P 12500 5800
+F 0 "#PWR014" H 12500 5650 50  0001 C CNN
+F 1 "+3V0" H 12515 5973 50  0000 C CNN
+F 2 "" H 12500 5800 50  0001 C CNN
+F 3 "" H 12500 5800 50  0001 C CNN
+	1    12500 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 5900 14000 5900
+Wire Wire Line
+	13250 5900 13150 5900
+Wire Wire Line
+	12750 5900 12500 5900
+Wire Wire Line
+	12500 5900 12500 5800
+Wire Wire Line
+	12500 5950 12500 5900
+Connection ~ 12500 5900
+Wire Wire Line
+	12500 6400 12500 6300
+Wire Wire Line
+	12500 6300 12950 6300
+Wire Wire Line
+	12950 6300 12950 6200
+Connection ~ 12500 6300
+Wire Wire Line
+	12500 6300 12500 6250
+Text GLabel 4000 6000 0    50   Input ~ 0
+LCD_BL
+Wire Wire Line
+	4000 6000 4150 6000
+Wire Wire Line
+	1950 9700 1850 9700
+Wire Wire Line
+	1950 9550 1850 9550
+$Comp
+L badge-rescue:TestPoint-Connector TP4
+U 1 1 5EBC0CA5
+P 1950 9700
+F 0 "TP4" V 1904 9888 50  0000 L CNN
+F 1 "TestPoint" V 1995 9888 50  0001 L CNN
+F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 2150 9700 50  0001 C CNN
+F 3 "~" H 2150 9700 50  0001 C CNN
+	1    1950 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L badge-rescue:TestPoint-Connector TP3
+U 1 1 5EBADC80
+P 1950 9550
+F 0 "TP3" V 1904 9738 50  0000 L CNN
+F 1 "TestPoint" V 1995 9738 50  0001 L CNN
+F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 2150 9550 50  0001 C CNN
+F 3 "~" H 2150 9550 50  0001 C CNN
+	1    1950 9550
+	0    1    1    0   
+$EndComp
+Text GLabel 1850 9700 0    50   Input ~ 0
+D-
+Text GLabel 1850 9550 0    50   Input ~ 0
+D+
 $EndSCHEMATC
