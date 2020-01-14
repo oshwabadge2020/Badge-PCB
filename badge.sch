@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:badge-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -31,7 +30,7 @@ F 8 "Unavailable" H 4650 6400 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LP2985-3.3 U2
+L badge-PCB:LP2985-3.3 U2
 U 1 1 5DEFECBC
 P 4600 1450
 F 0 "U2" H 4600 1792 50  0000 C CNN
@@ -73,7 +72,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 2350 5150 2450
 $Comp
-L Device:D D1
+L badge-PCB:D D1
 U 1 1 5DF19320
 P 2050 4100
 F 0 "D1" H 2050 4200 50  0000 C CNN
@@ -145,7 +144,7 @@ F 3 "" H 2950 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C3
+L badge-PCB:C C3
 U 1 1 5DF2DC9E
 P 3100 3550
 F 0 "C3" H 3215 3596 50  0000 L CNN
@@ -191,7 +190,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3850 3100 3700
 $Comp
-L Device:C C5
+L badge-PCB:C C5
 U 1 1 5DF3A02D
 P 3900 3550
 F 0 "C5" H 4015 3596 50  0000 L CNN
@@ -245,7 +244,7 @@ F 3 "" H 5800 3100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R4
+L badge-PCB:R_US R4
 U 1 1 5DF440ED
 P 5500 2900
 F 0 "R4" V 5295 2900 50  0000 C CNN
@@ -269,7 +268,7 @@ Wire Wire Line
 Text GLabel 5350 3200 2    50   Input ~ 0
 CHGSTAT
 $Comp
-L Device:R_US R5
+L badge-PCB:R_US R5
 U 1 1 5DF4589E
 P 5500 3400
 F 0 "R5" V 5450 3250 50  0000 C CNN
@@ -280,7 +279,7 @@ F 3 "~" H 5500 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0111
+L badge-PCB:+3V0-power #PWR0111
 U 1 1 5DF48E3F
 P 5750 3400
 F 0 "#PWR0111" H 5750 3250 50  0001 C CNN
@@ -313,7 +312,7 @@ F 3 "" H 3400 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L badge-PCB:C C4
 U 1 1 5DF505A0
 P 3650 1600
 F 0 "C4" H 3765 1646 50  0000 L CNN
@@ -365,7 +364,7 @@ $EndComp
 Wire Wire Line
 	3650 1750 3650 1850
 $Comp
-L badge-rescue:+3V0-power #PWR0115
+L badge-PCB:+3V0-power #PWR0115
 U 1 1 5DF6D59D
 P 5400 1200
 F 0 "#PWR0115" H 5400 1050 50  0001 C CNN
@@ -376,7 +375,7 @@ F 3 "" H 5400 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L badge-PCB:C C6
 U 1 1 5DF6EFEB
 P 5400 1600
 F 0 "C6" H 5515 1646 50  0000 L CNN
@@ -387,7 +386,7 @@ F 3 "~" H 5400 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L badge-PCB:C C7
 U 1 1 5DF7012C
 P 5700 1600
 F 0 "C7" H 5815 1646 50  0000 L CNN
@@ -398,7 +397,7 @@ F 3 "~" H 5700 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L badge-PCB:C C8
 U 1 1 5DF70726
 P 6050 1600
 F 0 "C8" H 6165 1646 50  0000 L CNN
@@ -499,7 +498,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 5400 3750 5400
 $Comp
-L badge-rescue:+3V0-power #PWR0121
+L badge-PCB:+3V0-power #PWR0121
 U 1 1 5E044E39
 P 5500 4650
 F 0 "#PWR0121" H 5500 4500 50  0001 C CNN
@@ -585,7 +584,7 @@ $EndComp
 Wire Wire Line
 	4600 1750 4600 1800
 $Comp
-L Device:R_US R1
+L badge-PCB:R_US R1
 U 1 1 5E0D32DF
 P 1600 3750
 F 0 "R1" H 1450 3700 50  0000 C CNN
@@ -652,7 +651,7 @@ NFC1
 Text GLabel 4050 6800 0    50   Input ~ 0
 NFC2
 $Comp
-L Device:Crystal Y1
+L badge-PCB:Crystal Y1
 U 1 1 5E10ADAE
 P 2350 4950
 F 0 "Y1" H 2350 4682 50  0000 C CNN
@@ -663,7 +662,7 @@ F 3 "https://www.mouser.com/datasheet/2/530/CM9V-T1A-1023054.pdf" H 2350 4950 50
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C1
+L badge-PCB:C C1
 U 1 1 5E113261
 P 2050 5150
 F 0 "C1" H 2165 5196 50  0000 L CNN
@@ -674,7 +673,7 @@ F 3 "~" H 2050 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L badge-PCB:C C2
 U 1 1 5E114388
 P 2600 5150
 F 0 "C2" H 2715 5196 50  0000 L CNN
@@ -743,7 +742,7 @@ LCD_CS
 Text GLabel 4050 7100 0    50   Input ~ 0
 LCD_RST
 $Comp
-L badge-rescue:+3V0-power #PWR0129
+L badge-PCB:+3V0-power #PWR0129
 U 1 1 5E146EAD
 P 13850 5400
 F 0 "#PWR0129" H 13850 5250 50  0001 C CNN
@@ -754,7 +753,7 @@ F 3 "" H 13850 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R6
+L badge-PCB:R_US R6
 U 1 1 5E1652C9
 P 13400 5900
 F 0 "R6" V 13300 5900 50  0000 C CNN
@@ -765,7 +764,7 @@ F 3 "~" H 13400 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R8
+L badge-PCB:R_US R8
 U 1 1 5E16C237
 P 12500 6100
 F 0 "R8" H 12350 6050 50  0000 C CNN
@@ -802,7 +801,7 @@ F 3 "" H 13800 8100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0132
+L badge-PCB:+3V0-power #PWR0132
 U 1 1 5E1DDFAA
 P 13800 6200
 F 0 "#PWR0132" H 13800 6050 50  0001 C CNN
@@ -855,7 +854,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 6950 1600 6950
 $Comp
-L badge-rescue:+3V0-power #PWR0133
+L badge-PCB:+3V0-power #PWR0133
 U 1 1 5E29AB96
 P 2200 6400
 F 0 "#PWR0133" H 2200 6250 50  0001 C CNN
@@ -921,7 +920,7 @@ F 3 "" H 9700 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0134
+L badge-PCB:+3V0-power #PWR0134
 U 1 1 5E38B748
 P 8250 2500
 F 0 "#PWR0134" H 8250 2350 50  0001 C CNN
@@ -943,7 +942,7 @@ F 3 "" H 8650 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1 C12
+L badge-PCB:CP1 C12
 U 1 1 5E38D794
 P 8450 3500
 F 0 "C12" H 8565 3546 50  0000 L CNN
@@ -954,7 +953,7 @@ F 3 "~" H 8450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R17
+L badge-PCB:R_US R17
 U 1 1 5E390313
 P 8550 2550
 F 0 "R17" V 8500 2400 50  0000 C CNN
@@ -965,7 +964,7 @@ F 3 "~" H 8550 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C13
+L badge-PCB:C C13
 U 1 1 5E3A8114
 P 8850 2850
 F 0 "C13" H 8965 2896 50  0000 L CNN
@@ -998,7 +997,7 @@ Connection ~ 8850 3050
 Wire Wire Line
 	8850 3050 8650 3050
 $Comp
-L Device:C C14
+L badge-PCB:C C14
 U 1 1 5E3D9E08
 P 8850 3500
 F 0 "C14" H 8965 3546 50  0000 L CNN
@@ -1009,7 +1008,7 @@ F 3 "~" H 8850 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C11
+L badge-PCB:CP1 C11
 U 1 1 5E3DA12B
 P 8200 3500
 F 0 "C11" H 7900 3550 50  0000 L CNN
@@ -1020,7 +1019,7 @@ F 3 "~" H 8200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0136
+L badge-PCB:+3V0-power #PWR0136
 U 1 1 5E3DA827
 P 8200 3200
 F 0 "#PWR0136" H 8200 3050 50  0001 C CNN
@@ -1121,7 +1120,7 @@ F 8 "Unavailable" H 9700 5400 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0140
+L badge-PCB:+3V0-power #PWR0140
 U 1 1 5E46369A
 P 10900 4600
 F 0 "#PWR0140" H 10900 4450 50  0001 C CNN
@@ -1141,7 +1140,7 @@ Wire Wire Line
 	10900 4800 10900 4700
 Connection ~ 10900 4700
 $Comp
-L Device:C C9
+L badge-PCB:C C9
 U 1 1 5E47CA59
 P 8150 6300
 F 0 "C9" H 8035 6254 50  0000 R CNN
@@ -1152,7 +1151,7 @@ F 3 "~" H 8150 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C10
+L badge-PCB:C C10
 U 1 1 5E47E62C
 P 8550 6300
 F 0 "C10" H 8435 6254 50  0000 R CNN
@@ -1197,7 +1196,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 6450 8150 6550
 $Comp
-L Device:C C15
+L badge-PCB:C C15
 U 1 1 5E4B4251
 P 11300 4900
 F 0 "C15" H 11415 4946 50  0000 L CNN
@@ -1208,7 +1207,7 @@ F 3 "~" H 11300 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L badge-PCB:C C16
 U 1 1 5E4BA22D
 P 11650 4900
 F 0 "C16" H 11765 4946 50  0000 L CNN
@@ -1256,7 +1255,7 @@ Wire Wire Line
 Text GLabel 10700 5200 2    50   Input ~ 0
 ACC_INT
 $Comp
-L badge-rescue:+3V0-power #PWR0145
+L badge-PCB:+3V0-power #PWR0145
 U 1 1 5E4ECA7A
 P 8000 4650
 F 0 "#PWR0145" H 8000 4500 50  0001 C CNN
@@ -1267,7 +1266,7 @@ F 3 "" H 8000 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R10
+L badge-PCB:R_US R10
 U 1 1 5E50AC77
 P 8250 4800
 F 0 "R10" V 8200 4650 50  0000 C CNN
@@ -1278,7 +1277,7 @@ F 3 "~" H 8250 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R11
+L badge-PCB:R_US R11
 U 1 1 5E50E586
 P 8250 4900
 F 0 "R11" V 8200 4750 50  0000 C CNN
@@ -1298,7 +1297,7 @@ Wire Wire Line
 	8000 4900 8000 4800
 Connection ~ 8000 4800
 $Comp
-L Device:R_US R12
+L badge-PCB:R_US R12
 U 1 1 5E5530D2
 P 8250 5300
 F 0 "R12" V 8200 5150 50  0000 C CNN
@@ -1309,7 +1308,7 @@ F 3 "~" H 8250 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R13
+L badge-PCB:R_US R13
 U 1 1 5E553873
 P 8250 5500
 F 0 "R13" V 8200 5350 50  0000 C CNN
@@ -1382,7 +1381,7 @@ F 8 "Unavailable" H 9400 1750 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0147
+L badge-PCB:+3V0-power #PWR0147
 U 1 1 5E64AE2E
 P 10150 1250
 F 0 "#PWR0147" H 10150 1100 50  0001 C CNN
@@ -1404,7 +1403,7 @@ F 3 "" H 10150 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R16
+L badge-PCB:R_US R16
 U 1 1 5E64EF71
 P 8500 1950
 F 0 "R16" V 8550 1800 50  0000 C CNN
@@ -1447,7 +1446,7 @@ IIC_SCL
 Text GLabel 8600 1850 0    50   Input ~ 0
 IIC_SDA
 $Comp
-L Device:R_US R15
+L badge-PCB:R_US R15
 U 1 1 5E6B4664
 P 8500 1650
 F 0 "R15" V 8450 1500 50  0000 C CNN
@@ -1512,7 +1511,7 @@ Wire Notes Line
 Text Notes 6850 1100 0    157  ~ 0
 Sensors
 $Comp
-L badge-rescue:TestPoint-Connector TP1
+L badge-PCB:TestPoint-Connector TP1
 U 1 1 5EB8EB53
 P 1950 9250
 F 0 "TP1" V 1904 9438 50  0000 L CNN
@@ -1527,7 +1526,7 @@ SWDIO
 Text GLabel 1850 9250 0    50   Input ~ 0
 SWCLK
 $Comp
-L badge-rescue:TestPoint-Connector TP2
+L badge-PCB:TestPoint-Connector TP2
 U 1 1 5EBAD9AC
 P 1950 9400
 F 0 "TP2" V 1904 9588 50  0000 L CNN
@@ -1538,7 +1537,7 @@ F 3 "~" H 2150 9400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR0152
+L badge-PCB:+3V0-power #PWR0152
 U 1 1 5EBC28EE
 P 3000 9350
 F 0 "#PWR0152" H 3000 9200 50  0001 C CNN
@@ -1560,7 +1559,7 @@ F 3 "" H 3250 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:TestPoint-Connector TP7
+L badge-PCB:TestPoint-Connector TP7
 U 1 1 5EBC59AC
 P 3000 9450
 F 0 "TP7" H 2942 9476 50  0000 R CNN
@@ -1571,7 +1570,7 @@ F 3 "~" H 3200 9450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L badge-rescue:TestPoint-Connector TP8
+L badge-PCB:TestPoint-Connector TP8
 U 1 1 5EBC77B8
 P 3250 9450
 F 0 "TP8" H 3192 9476 50  0000 R CNN
@@ -1586,7 +1585,7 @@ IIC_SCL
 Text GLabel 1850 9850 0    50   Input ~ 0
 IIC_SDA
 $Comp
-L badge-rescue:TestPoint-Connector TP5
+L badge-PCB:TestPoint-Connector TP5
 U 1 1 5EBE4091
 P 1950 9850
 F 0 "TP5" V 1904 10038 50  0000 L CNN
@@ -1597,7 +1596,7 @@ F 3 "~" H 2150 9850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L badge-rescue:TestPoint-Connector TP6
+L badge-PCB:TestPoint-Connector TP6
 U 1 1 5EBE4364
 P 1950 10000
 F 0 "TP6" V 1904 10188 50  0000 L CNN
@@ -1620,7 +1619,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 9350 3250 9450
 $Comp
-L badge-rescue:TestPoint-Connector TP10
+L badge-PCB:TestPoint-Connector TP10
 U 1 1 5EC890F2
 P 3500 9450
 F 0 "TP10" H 3442 9476 50  0000 R CNN
@@ -1653,7 +1652,7 @@ F 3 "" H 3000 10050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:TestPoint-Connector TP9
+L badge-PCB:TestPoint-Connector TP9
 U 1 1 5EC938C7
 P 3000 9900
 F 0 "TP9" H 3058 10018 50  0000 L CNN
@@ -1668,7 +1667,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 9900 3000 10050
 $Comp
-L Switch:SW_DIP_x01 SW1
+L badge-PCB:SW_DIP_x01 SW1
 U 1 1 5ED0549F
 P 6900 5750
 F 0 "SW1" V 6700 5550 50  0000 L CNN
@@ -1679,7 +1678,7 @@ F 3 "~" H 6900 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R7
+L badge-PCB:R_US R7
 U 1 1 5ED17BF3
 P 6900 5200
 F 0 "R7" V 6850 5050 50  0000 C CNN
@@ -1699,7 +1698,7 @@ Connection ~ 6900 5400
 Wire Wire Line
 	6900 5400 6900 5350
 $Comp
-L badge-rescue:+3V0-power #PWR0156
+L badge-PCB:+3V0-power #PWR0156
 U 1 1 5ED54756
 P 6900 4950
 F 0 "#PWR0156" H 6900 4800 50  0001 C CNN
@@ -1725,7 +1724,7 @@ $EndComp
 Wire Wire Line
 	6900 6050 6900 6150
 $Comp
-L Switch:SW_DIP_x01 SW2
+L badge-PCB:SW_DIP_x01 SW2
 U 1 1 5ED7E567
 P 7350 5750
 F 0 "SW2" V 7150 5550 50  0000 L CNN
@@ -1736,7 +1735,7 @@ F 3 "~" H 7350 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R9
+L badge-PCB:R_US R9
 U 1 1 5ED7E56D
 P 7350 5200
 F 0 "R9" V 7300 5050 50  0000 C CNN
@@ -1756,7 +1755,7 @@ Connection ~ 7350 5400
 Wire Wire Line
 	7350 5400 7350 5350
 $Comp
-L badge-rescue:+3V0-power #PWR0158
+L badge-PCB:+3V0-power #PWR0158
 U 1 1 5ED7E578
 P 7350 4950
 F 0 "#PWR0158" H 7350 4800 50  0001 C CNN
@@ -1808,7 +1807,7 @@ Can't be swapped
 Wire Notes Line
 	3550 6700 3550 6800
 $Comp
-L badge-rescue:TestPoint-Connector TP11
+L badge-PCB:TestPoint-Connector TP11
 U 1 1 5EF056EB
 P 1950 9100
 F 0 "TP11" V 1904 9288 50  0000 L CNN
@@ -1863,7 +1862,7 @@ F 12 "Active" H 10300 8500 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR01
+L badge-PCB:+3V0-power #PWR01
 U 1 1 5F01B004
 P 10100 6800
 F 0 "#PWR01" H 10100 6650 50  0001 C CNN
@@ -1921,7 +1920,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 7300 5250 7300
 $Comp
-L LED:SK6812 D2
+L badge-PCB:LED_SK6812 D2
 U 1 1 5F18BBF4
 P 9350 9400
 F 0 "D2" H 9694 9446 50  0000 L CNN
@@ -1932,7 +1931,7 @@ F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:SK6812 D3
+L badge-PCB:LED_SK6812 D3
 U 1 1 5F192511
 P 10350 9400
 F 0 "D3" H 10694 9446 50  0000 L CNN
@@ -1954,7 +1953,7 @@ F 3 "" H 7950 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R20
+L badge-PCB:R_US R20
 U 1 1 5F1C52D2
 P 8050 9250
 F 0 "R20" H 7900 9200 50  0000 C CNN
@@ -1994,7 +1993,7 @@ Connection ~ 9350 9000
 Wire Wire Line
 	9350 9000 10350 9000
 $Comp
-L Device:C C17
+L badge-PCB:C C17
 U 1 1 5F2B974C
 P 8700 9250
 F 0 "C17" H 8815 9296 50  0000 L CNN
@@ -2079,7 +2078,7 @@ IIC_SCL
 Text GLabel 6050 6700 0    50   Input ~ 0
 IIC_SDA
 $Comp
-L Device:R_US R18
+L badge-PCB:R_US R18
 U 1 1 5DFB54C7
 P 6150 6300
 F 0 "R18" V 6100 6150 50  0000 C CNN
@@ -2090,7 +2089,7 @@ F 3 "~" H 6150 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R19
+L badge-PCB:R_US R19
 U 1 1 5DFB5E5D
 P 6300 6300
 F 0 "R19" V 6250 6150 50  0000 C CNN
@@ -2101,7 +2100,7 @@ F 3 "~" H 6300 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR07
+L badge-PCB:+3V0-power #PWR07
 U 1 1 5DFB69B4
 P 6150 6050
 F 0 "#PWR07" H 6150 5900 50  0001 C CNN
@@ -2112,7 +2111,7 @@ F 3 "" H 6150 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR08
+L badge-PCB:+3V0-power #PWR08
 U 1 1 5DFB7745
 P 6300 6050
 F 0 "#PWR08" H 6300 5900 50  0001 C CNN
@@ -2135,7 +2134,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 6700 6300 6450
 $Comp
-L badge-rescue:W25Q32JVSS-Memory_Flash U1
+L badge-PCB:W25Q32JVSS-Memory_Flash U1
 U 1 1 5E019631
 P 2200 6850
 F 0 "U1" H 1900 7200 50  0000 C CNN
@@ -2152,7 +2151,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 1450 4200 1450
 $Comp
-L badge-rescue:DISP_TFT_1.54IN_240X240_22P-TFT_1.54IN_240X240PIN TFT1
+L badge-PCB:DISP_TFT_1.54IN_240X240_22P-TFT_1.54IN_240X240PIN TFT1
 U 1 1 5E28E58C
 P 14700 6700
 F 0 "TFT1" H 14500 8350 50  0000 L CNN
@@ -2287,7 +2286,7 @@ F 8 "SM02B-SRSS-TB_LF__SN_" H 5650 4050 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
+L badge-PCB:USB_B_Micro J1
 U 1 1 5E163B77
 P 1450 2150
 F 0 "J1" H 1507 2617 50  0000 C CNN
@@ -2304,7 +2303,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 7800 4150 7800
 $Comp
-L Transistor_FET:AO3401A Q1
+L badge-PCB:AO3401A-Transistor_FET Q1
 U 1 1 5E1E6343
 P 2350 3800
 F 0 "Q1" H 2555 3846 50  0000 L CNN
@@ -2315,7 +2314,7 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2350 3800 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:AO3401A Q3
+L badge-PCB:AO3401A-Transistor_FET Q3
 U 1 1 5E1FDFBB
 P 8400 9100
 F 0 "Q3" V 8742 9100 50  0000 C CNN
@@ -2326,7 +2325,7 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8400 9100 50  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR012
+L badge-PCB:+3V0-power #PWR012
 U 1 1 5E1FF0FC
 P 8250 1650
 F 0 "#PWR012" H 8250 1500 50  0001 C CNN
@@ -2337,7 +2336,7 @@ F 3 "" H 8250 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR013
+L badge-PCB:+3V0-power #PWR013
 U 1 1 5E2E21FB
 P 13850 5300
 F 0 "#PWR013" H 13850 5150 50  0001 C CNN
@@ -2352,7 +2351,7 @@ Wire Wire Line
 Wire Wire Line
 	13850 5400 14000 5400
 $Comp
-L Transistor_FET:AO3401A Q2
+L badge-PCB:AO3401A-Transistor_FET Q2
 U 1 1 5E30F506
 P 12950 6000
 F 0 "Q2" V 13292 6000 50  0000 C CNN
@@ -2363,7 +2362,7 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 12950 6000 50  0001 L CN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L badge-rescue:+3V0-power #PWR014
+L badge-PCB:+3V0-power #PWR014
 U 1 1 5E3262A3
 P 12500 5800
 F 0 "#PWR014" H 12500 5650 50  0001 C CNN
@@ -2402,7 +2401,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 9550 1850 9550
 $Comp
-L badge-rescue:TestPoint-Connector TP4
+L badge-PCB:TestPoint-Connector TP4
 U 1 1 5EBC0CA5
 P 1950 9700
 F 0 "TP4" V 1904 9888 50  0000 L CNN
@@ -2413,7 +2412,7 @@ F 3 "~" H 2150 9700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L badge-rescue:TestPoint-Connector TP3
+L badge-PCB:TestPoint-Connector TP3
 U 1 1 5EBADC80
 P 1950 9550
 F 0 "TP3" V 1904 9738 50  0000 L CNN

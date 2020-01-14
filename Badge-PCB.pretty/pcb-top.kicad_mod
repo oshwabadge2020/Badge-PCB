@@ -1,4 +1,4 @@
-(module lib:pcb-top locked (layer F.Cu) (tedit 5E18C012)
+(module pcb-top locked (layer F.Cu) (tedit 5E1D7B28)
   (fp_text reference Ref** (at -2.54 3.9878) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
@@ -250,4 +250,9 @@
   (fp_line (start 41.382052 14.845278) (end 41.662121 14.760193) (layer Edge.Cuts) (width 0.1))
   (fp_line (start 41.662121 14.760193) (end 41.956168 14.73113) (layer Edge.Cuts) (width 0.1))
   (fp_line (start 41.956168 14.73113) (end 41.956168 14.73113) (layer Edge.Cuts) (width 0.1))
+  (model ${KIPRJMOD}/3d_part_models/TFT_1_54IN_240X240_22PIN.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
