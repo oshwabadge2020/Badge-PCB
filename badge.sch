@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:badge-cache
+EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -2359,7 +2360,7 @@ F 1 "AO3401A" V 13201 6000 50  0000 C CNN
 F 2 "Badge-PCB:SOT-23" H 13150 5925 50  0001 L CIN
 F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 12950 6000 50  0001 L CNN
 	1    12950 6000
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L badge-PCB:+3V0-power #PWR014
