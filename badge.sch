@@ -1919,89 +1919,6 @@ Wire Wire Line
 	5350 7400 5250 7400
 Wire Wire Line
 	5350 7300 5250 7300
-$Comp
-L power:VBUS #PWR03
-U 1 1 5F1B3234
-P 7950 8800
-F 0 "#PWR03" H 7950 8650 50  0001 C CNN
-F 1 "VBUS" H 7965 8973 50  0000 C CNN
-F 2 "" H 7950 8800 50  0001 C CNN
-F 3 "" H 7950 8800 50  0001 C CNN
-	1    7950 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L badge-PCB:R_US R20
-U 1 1 5F1C52D2
-P 8050 9250
-F 0 "R20" H 7900 9200 50  0000 C CNN
-F 1 "100k" H 7900 9300 50  0000 C CNN
-F 2 "Badge-PCB:R_0402" V 8090 9240 50  0001 C CNN
-F 3 "~" H 8050 9250 50  0001 C CNN
-	1    8050 9250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 8800 7950 9000
-Wire Wire Line
-	7950 9000 8050 9000
-Wire Wire Line
-	8050 9100 8050 9000
-Connection ~ 8050 9000
-Wire Wire Line
-	8050 9000 8200 9000
-Wire Wire Line
-	8050 9450 8400 9450
-Wire Wire Line
-	8400 9450 8400 9300
-Wire Wire Line
-	8050 9450 8050 9400
-Wire Wire Line
-	8050 9450 7850 9450
-Connection ~ 8050 9450
-Text GLabel 7850 9450 0    50   Input ~ 0
-LED_POW
-Wire Wire Line
-	8600 9000 8700 9000
-Wire Wire Line
-	9350 9100 9350 9000
-$Comp
-L badge-PCB:C C17
-U 1 1 5F2B974C
-P 8700 9250
-F 0 "C17" H 8815 9296 50  0000 L CNN
-F 1 "10uF" H 8750 9150 50  0000 L CNN
-F 2 "Badge-PCB:C_0402" H 8738 9100 50  0001 C CNN
-F 3 "~" H 8700 9250 50  0001 C CNN
-	1    8700 9250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5F2C7A63
-P 8700 9850
-F 0 "#PWR04" H 8700 9600 50  0001 C CNN
-F 1 "GND" H 8705 9677 50  0000 C CNN
-F 2 "" H 8700 9850 50  0001 C CNN
-F 3 "" H 8700 9850 50  0001 C CNN
-	1    8700 9850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 9400 8700 9850
-Wire Wire Line
-	8700 9000 8700 9100
-Connection ~ 8700 9000
-Wire Wire Line
-	8700 9000 9350 9000
-Wire Wire Line
-	9050 9400 8950 9400
-Wire Wire Line
-	8950 9400 8950 9600
-Text GLabel 8950 9600 3    50   Input ~ 0
-LED_DAT
-Text GLabel 6250 7600 2    50   Input ~ 0
-LED_DAT
 Text GLabel 4050 7400 0    50   Input ~ 0
 LED_POW
 Wire Wire Line
@@ -2010,8 +1927,6 @@ Wire Wire Line
 	4050 7400 4150 7400
 Text Notes 1050 8700 0    157  ~ 0
 Testpoints
-Text Notes 6800 8650 0    157  ~ 0
-LEDs\n
 Text Notes 10600 7000 0    50   ~ 0
 Mic, Optional, nice to have
 Text Notes 9350 3800 0    50   ~ 0
@@ -2259,17 +2174,6 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2350 3800 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L badge-PCB:AO3401A-Transistor_FET Q3
-U 1 1 5E1FDFBB
-P 8400 9100
-F 0 "Q3" V 8742 9100 50  0000 C CNN
-F 1 "AO3401A" V 8651 9100 50  0000 C CNN
-F 2 "Badge-PCB:SOT-23" H 8600 9025 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8400 9100 50  0001 L CNN
-	1    8400 9100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L badge-PCB:+3V0-power #PWR012
 U 1 1 5E1FF0FC
 P 8250 1650
@@ -2489,31 +2393,7 @@ Text GLabel 6800 3550 1    50   Input ~ 0
 SW_C
 Text GLabel 7250 3550 1    50   Input ~ 0
 SW_D
-$Comp
-L LED:WS2812B D2
-U 1 1 5E288C49
-P 9350 9400
-F 0 "D2" H 9694 9446 50  0000 L CNN
-F 1 "WS2812B" H 9694 9355 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9400 9100 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9450 9025 50  0001 L TNN
-	1    9350 9400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0163
-U 1 1 5E289631
-P 9350 9750
-F 0 "#PWR0163" H 9350 9500 50  0001 C CNN
-F 1 "GND" H 9355 9577 50  0000 C CNN
-F 2 "" H 9350 9750 50  0001 C CNN
-F 3 "" H 9350 9750 50  0001 C CNN
-	1    9350 9750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 9700 9350 9750
-Text GLabel 5350 7600 2    50   Input ~ 0
+Text GLabel 4000 7500 0    50   Input ~ 0
 SW_C
 Text GLabel 5350 5500 2    50   Input ~ 0
 SW_D
@@ -2521,4 +2401,6 @@ Wire Wire Line
 	5350 5500 5250 5500
 Wire Wire Line
 	5250 5600 5350 5600
+Wire Wire Line
+	4150 7500 4000 7500
 $EndSCHEMATC
