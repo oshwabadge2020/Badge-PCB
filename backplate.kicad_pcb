@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu19.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 1)
     (tracks 0)
     (zones 0)
     (modules 1)
@@ -420,5 +420,7 @@
     (fp_line (start -40.653976 -24.002647) (end -40.959592 -23.956272) (layer Edge.Cuts) (width 0.1))
     (fp_line (start -40.33907 -24.018443) (end -40.653976 -24.002647) (layer Edge.Cuts) (width 0.1))
   )
+
+  (gr_line (start 96.393 82.2706) (end 118.893 82.2706) (layer Eco1.User) (width 0.15) (tstamp 5E22ED93))
 
 )
