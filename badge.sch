@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:badge-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -2462,4 +2461,28 @@ F 3 "" H 8050 9650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8050 9550 8050 9650
+$Comp
+L power:+BATT #PWR0166
+U 1 1 5E3AA855
+P 3850 9300
+F 0 "#PWR0166" H 3850 9150 50  0001 C CNN
+F 1 "+BATT" V 3865 9427 50  0000 L CNN
+F 2 "" H 3850 9300 50  0001 C CNN
+F 3 "" H 3850 9300 50  0001 C CNN
+	1    3850 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L badge-PCB:TestPoint-Connector TP12
+U 1 1 5E3B118C
+P 3850 9450
+F 0 "TP12" H 3792 9476 50  0000 R CNN
+F 1 "TestPoint" H 3792 9567 50  0001 R CNN
+F 2 "Badge-PCB:Test_Point_Pad_d1.0mm" H 4050 9450 50  0001 C CNN
+F 3 "~" H 4050 9450 50  0001 C CNN
+	1    3850 9450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 9300 3850 9450
 $EndSCHEMATC
