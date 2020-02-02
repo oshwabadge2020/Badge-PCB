@@ -623,9 +623,9 @@ Text GLabel 5350 5400 2    50   Input ~ 0
 QSPI_DIO3
 Text GLabel 4050 7800 0    50   Input ~ 0
 QSPI_DIO2
-Text GLabel 5350 5200 2    50   Input ~ 0
-QSPI_DIO1
 Text GLabel 5350 7800 2    50   Input ~ 0
+QSPI_DIO1
+Text GLabel 5350 5200 2    50   Input ~ 0
 QSPI_DIO0
 Text GLabel 5350 7700 2    50   Input ~ 0
 QSPI_~CS
@@ -812,9 +812,9 @@ Text GLabel 13850 6600 0    50   Input ~ 0
 LCD_TE
 Text GLabel 4050 7300 0    50   Input ~ 0
 LCD_TE
-Text GLabel 2800 6650 2    50   Input ~ 0
-QSPI_DIO1
 Text GLabel 2800 6750 2    50   Input ~ 0
+QSPI_DIO1
+Text GLabel 2800 6650 2    50   Input ~ 0
 QSPI_DIO0
 Text GLabel 1600 6750 0    50   Input ~ 0
 QSPI_~CS
@@ -2475,10 +2475,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 5000 5750 4650
 $Comp
-L power:+5P #PWR?
+L power:+5P #PWR0122
 U 1 1 5E3F9279
 P 5750 4650
-F 0 "#PWR?" H 5750 4500 50  0001 C CNN
+F 0 "#PWR0122" H 5750 4500 50  0001 C CNN
 F 1 "+5P" H 5765 4823 50  0000 C CNN
 F 2 "" H 5750 4650 50  0001 C CNN
 F 3 "" H 5750 4650 50  0001 C CNN
