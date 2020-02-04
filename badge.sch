@@ -2540,10 +2540,12 @@ Wire Wire Line
 	3650 3550 3650 3600
 Text Notes 3800 3850 1    50   ~ 0
 1.5uA Drain
-Text GLabel 4050 7900 0    50   Input ~ 0
+Text GLabel 5350 6900 2    50   Input ~ 0
 BATVSENSE
 Text GLabel 4050 7400 0    50   Input ~ 0
 CHGSTAT
 Wire Wire Line
 	4050 7900 4150 7900
+Wire Wire Line
+	5350 6900 5250 6900
 $EndSCHEMATC
