@@ -1904,8 +1904,6 @@ Wire Wire Line
 	5350 7400 5250 7400
 Wire Wire Line
 	5350 7300 5250 7300
-Text GLabel 4050 7400 0    50   Input ~ 0
-LED_POW
 Wire Wire Line
 	5350 7600 5250 7600
 Wire Wire Line
@@ -2542,8 +2540,10 @@ Wire Wire Line
 	3650 3550 3650 3600
 Text Notes 3800 3850 1    50   ~ 0
 1.5uA Drain
-Text GLabel 6250 7050 3    50   Input ~ 0
+Text GLabel 4050 7900 0    50   Input ~ 0
 BATVSENSE
-Text GLabel 6150 7050 3    50   Input ~ 0
+Text GLabel 4050 7400 0    50   Input ~ 0
 CHGSTAT
+Wire Wire Line
+	4050 7900 4150 7900
 $EndSCHEMATC
