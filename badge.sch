@@ -2113,7 +2113,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 3850 5600 3850
 Wire Wire Line
-	3500 3100 3900 3100
+	3500 3100 3650 3100
 $Comp
 L badge-PCB:USB_B_Micro J1
 U 1 1 5E163B77
@@ -2485,4 +2485,65 @@ F 8 "SM02B-SRSS-TB_LF__SN_" H 5650 3750 50  0001 L BNN "Field8"
 	1    5650 3750
 	1    0    0    1   
 $EndComp
+Text Notes 10250 1800 0    50   ~ 0
+IIC: 0x76
+Text Notes 10700 2950 0    50   ~ 0
+IIC addr:  0x39
+$Comp
+L badge-PCB:R_US R14
+U 1 1 5E3DC3EB
+P 3650 3350
+F 0 "R14" V 3600 3200 50  0000 C CNN
+F 1 "800k" V 3750 3350 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 3690 3340 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L badge-PCB:R_US R20
+U 1 1 5E3E1897
+P 3650 3750
+F 0 "R20" V 3600 3600 50  0000 C CNN
+F 1 "2m" V 3750 3750 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 3690 3740 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5E3E20EA
+P 3650 4000
+F 0 "#PWR0167" H 3650 3750 50  0001 C CNN
+F 1 "GND" H 3655 3827 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3100 3650 3200
+Connection ~ 3650 3100
+Wire Wire Line
+	3650 3100 3900 3100
+Wire Wire Line
+	3650 3500 3650 3550
+Wire Wire Line
+	3650 3900 3650 4000
+Text GLabel 3450 3700 3    50   Input ~ 0
+BATVSENSE
+Wire Wire Line
+	3450 3700 3450 3550
+Wire Wire Line
+	3450 3550 3650 3550
+Connection ~ 3650 3550
+Wire Wire Line
+	3650 3550 3650 3600
+Text Notes 3800 3850 1    50   ~ 0
+1.5uA Drain
+Text GLabel 6250 7050 3    50   Input ~ 0
+BATVSENSE
+Text GLabel 6150 7050 3    50   Input ~ 0
+CHGSTAT
 $EndSCHEMATC
