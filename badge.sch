@@ -518,21 +518,6 @@ Connection ~ 5500 4800
 Wire Wire Line
 	5500 4800 5500 4650
 $Comp
-L power:VBUS #PWR0122
-U 1 1 5E0518C7
-P 5750 4650
-F 0 "#PWR0122" H 5750 4500 50  0001 C CNN
-F 1 "VBUS" H 5765 4823 50  0000 C CNN
-F 2 "" H 5750 4650 50  0001 C CNN
-F 3 "" H 5750 4650 50  0001 C CNN
-	1    5750 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 5000 5750 5000
-Wire Wire Line
-	5750 5000 5750 4650
-$Comp
 L power:GND #PWR0123
 U 1 1 5E05EDBE
 P 2200 7400
@@ -638,9 +623,9 @@ Text GLabel 5350 5400 2    50   Input ~ 0
 QSPI_DIO3
 Text GLabel 4050 7800 0    50   Input ~ 0
 QSPI_DIO2
-Text GLabel 5350 5200 2    50   Input ~ 0
-QSPI_DIO1
 Text GLabel 5350 7800 2    50   Input ~ 0
+QSPI_DIO1
+Text GLabel 5350 5200 2    50   Input ~ 0
 QSPI_DIO0
 Text GLabel 5350 7700 2    50   Input ~ 0
 QSPI_~CS
@@ -827,9 +812,9 @@ Text GLabel 13850 6600 0    50   Input ~ 0
 LCD_TE
 Text GLabel 4050 7300 0    50   Input ~ 0
 LCD_TE
-Text GLabel 2800 6650 2    50   Input ~ 0
-QSPI_DIO1
 Text GLabel 2800 6750 2    50   Input ~ 0
+QSPI_DIO1
+Text GLabel 2800 6650 2    50   Input ~ 0
 QSPI_DIO0
 Text GLabel 1600 6750 0    50   Input ~ 0
 QSPI_~CS
@@ -1919,8 +1904,6 @@ Wire Wire Line
 	5350 7400 5250 7400
 Wire Wire Line
 	5350 7300 5250 7300
-Text GLabel 4050 7400 0    50   Input ~ 0
-LED_POW
 Wire Wire Line
 	5350 7600 5250 7600
 Wire Wire Line
@@ -2128,23 +2111,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 3850 5600 3850
 Wire Wire Line
-	3500 3100 3900 3100
-$Comp
-L badge-PCB:SM02B-SRSS-TB_LF__SN__SM02B-SRSS-TB J2
-U 1 1 5E03F58A
-P 5650 4050
-F 0 "J2" H 6080 4246 50  0000 L CNN
-F 1 "SM02B-SRSS-TB" H 5700 4000 50  0000 L CNN
-F 2 "Badge-PCB:SM02B-SRSS-TB" H 5650 4050 50  0001 L BNN
-F 3 "0.23 USD" H 5650 4050 50  0001 L BNN
-F 4 "JST" H 5650 4050 50  0001 L BNN "Field4"
-F 5 "None" H 5650 4050 50  0001 L BNN "Field5"
-F 6 "Good" H 5650 4050 50  0001 L BNN "Field6"
-F 7 "SH Series 2 Position 1 mm Pitch Surface Mount Side Entry Shrouded Header" H 5650 4050 50  0001 L BNN "Field7"
-F 8 "SM02B-SRSS-TB_LF__SN_" H 5650 4050 50  0001 L BNN "Field8"
-	1    5650 4050
-	1    0    0    -1  
-$EndComp
+	3500 3100 3650 3100
 $Comp
 L badge-PCB:USB_B_Micro J1
 U 1 1 5E163B77
@@ -2485,4 +2452,100 @@ F 3 "~" H 4050 9450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 9300 3850 9450
+Wire Wire Line
+	5250 5000 5750 5000
+Wire Wire Line
+	5750 5000 5750 4650
+$Comp
+L power:+5P #PWR0122
+U 1 1 5E3F9279
+P 5750 4650
+F 0 "#PWR0122" H 5750 4500 50  0001 C CNN
+F 1 "+5P" H 5765 4823 50  0000 C CNN
+F 2 "" H 5750 4650 50  0001 C CNN
+F 3 "" H 5750 4650 50  0001 C CNN
+	1    5750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L badge-PCB:SM02B-SRSS-TB_LF__SN__SM02B-SRSS-TB J2
+U 1 1 5E03F58A
+P 5650 3750
+F 0 "J2" H 6080 3946 50  0000 L CNN
+F 1 "SM02B-SRSS-TB" H 5700 3700 50  0000 L CNN
+F 2 "Badge-PCB:SM02B-SRSS-TB" H 5650 3750 50  0001 L BNN
+F 3 "0.23 USD" H 5650 3750 50  0001 L BNN
+F 4 "JST" H 5650 3750 50  0001 L BNN "Field4"
+F 5 "None" H 5650 3750 50  0001 L BNN "Field5"
+F 6 "Good" H 5650 3750 50  0001 L BNN "Field6"
+F 7 "SH Series 2 Position 1 mm Pitch Surface Mount Side Entry Shrouded Header" H 5650 3750 50  0001 L BNN "Field7"
+F 8 "SM02B-SRSS-TB_LF__SN_" H 5650 3750 50  0001 L BNN "Field8"
+	1    5650 3750
+	1    0    0    1   
+$EndComp
+Text Notes 10250 1800 0    50   ~ 0
+IIC: 0x76
+Text Notes 10700 2950 0    50   ~ 0
+IIC addr:  0x39
+$Comp
+L badge-PCB:R_US R14
+U 1 1 5E3DC3EB
+P 3650 3350
+F 0 "R14" V 3600 3200 50  0000 C CNN
+F 1 "800k" V 3750 3350 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 3690 3340 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L badge-PCB:R_US R20
+U 1 1 5E3E1897
+P 3650 3750
+F 0 "R20" V 3600 3600 50  0000 C CNN
+F 1 "2m" V 3750 3750 50  0000 C CNN
+F 2 "Badge-PCB:R_0402" V 3690 3740 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5E3E20EA
+P 3650 4000
+F 0 "#PWR0167" H 3650 3750 50  0001 C CNN
+F 1 "GND" H 3655 3827 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3100 3650 3200
+Connection ~ 3650 3100
+Wire Wire Line
+	3650 3100 3900 3100
+Wire Wire Line
+	3650 3500 3650 3550
+Wire Wire Line
+	3650 3900 3650 4000
+Text GLabel 3450 3700 3    50   Input ~ 0
+BATVSENSE
+Wire Wire Line
+	3450 3700 3450 3550
+Wire Wire Line
+	3450 3550 3650 3550
+Connection ~ 3650 3550
+Wire Wire Line
+	3650 3550 3650 3600
+Text Notes 3800 3850 1    50   ~ 0
+1.5uA Drain
+Text GLabel 5350 6900 2    50   Input ~ 0
+BATVSENSE
+Text GLabel 4050 7400 0    50   Input ~ 0
+CHGSTAT
+Wire Wire Line
+	4050 7900 4150 7900
+Wire Wire Line
+	5350 6900 5250 6900
 $EndSCHEMATC
