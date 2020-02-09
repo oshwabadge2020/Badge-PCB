@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu19.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 3)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 3)
@@ -2153,7 +2153,7 @@
       (xy 17.779648 11.1633) (xy 17.78635 11.978348)) (layer F.Cu) (width 0.01))
   )
 
-  (module Badge-PCB:bottom-pcb (layer F.Cu) (tedit 5E289924) (tstamp 5E2960DB)
+  (module Badge-PCB:bottom-pcb (layer F.Cu) (tedit 5E289924) (tstamp 5E40CBCA)
     (at 127.7 105.275)
     (fp_text reference Ref** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
@@ -2469,7 +2469,7 @@
     (fp_line (start -40.33907 -24.018443) (end -40.653976 -24.002647) (layer Edge.Cuts) (width 0.1))
   )
 
-  (module Badge-PCB:oshw-us000214 (layer F.Cu) (tedit 0) (tstamp 5E296E3D)
+  (module Badge-PCB:oshw-us000214 (layer F.Cu) (tedit 0) (tstamp 5E40C37C)
     (at 103.75 104.475)
     (fp_text reference Ref** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
@@ -2623,7 +2623,10 @@
       (xy -9.091094 6.570498)) (layer F.Cu) (width 0.01))
   )
 
-  (gr_text "    Sponsored by:\nDigi-Key, Sparkfun and OSHPark" (at 99.725 116.825) (layer F.SilkS) (tstamp 5E28FFEF)
+  (gr_text "with help from:\nAnool Mahidharia\nDrew Fustini" (at 100.99802 117.42674) (layer F.SilkS) (tstamp 5E3FFCE8)
+    (effects (font (size 0.75 0.75) (thickness 0.1)))
+  )
+  (gr_text "Thanks to DigiKey, Sparkfun & OSH Park" (at 97.27184 87.32012) (layer F.SilkS) (tstamp 5E28FFEF)
     (effects (font (size 0.75 0.75) (thickness 0.1)))
   )
   (gr_text "Designed by:\nAlex Camilo\nMichael Welling" (at 101.05 113.55) (layer F.SilkS) (tstamp 5E28FFEE)
